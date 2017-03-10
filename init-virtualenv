@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copyright © 2016 Martin Ueding <dev@martin-ueding.de>
+# Copyright © 2016-2017 Martin Ueding <dev@martin-ueding.de>
 
 set -e
 set -u
@@ -17,4 +17,4 @@ virtualenv-3 "$virtualenv"
 PS1=
 source "$virtualenv/bin/activate"
 
-pip3 install django
+pip3 install -r requirements.txt
